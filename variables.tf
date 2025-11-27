@@ -25,3 +25,15 @@ variable "ssm_private_subnets" {
 variable "ssm_pod_subnets" {
   type = list(string)
 }
+
+variable "auto_scale_options" {
+  type = object({
+    min     = number
+    max     = number
+    desired = number
+  })
+}
+
+variable "nodes_instance_sizes" {
+  type = list(string)
+}
