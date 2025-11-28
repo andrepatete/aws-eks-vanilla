@@ -10,6 +10,21 @@ variable "k8s_version" {
   type = string
 }
 
+variable "addon_cni_version" {
+  type    = string
+  default = "v1.20.4-eksbuild.2"
+}
+
+variable "addon_coredns_version" {
+  type    = string
+  default = "v1.12.1-eksbuild.2"
+}
+
+variable "addon_kubeproxy_version" {
+  type    = string
+  default = "v1.33.3-eksbuild.4"
+}
+
 variable "ssm_vpc" {
   type = string
 }
