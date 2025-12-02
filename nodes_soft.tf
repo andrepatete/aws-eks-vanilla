@@ -23,7 +23,7 @@ resource "aws_eks_node_group" "soft" {
     "capacity/os"   = "BOTTLEROCKET"
     "capacity/arch" = "x86_64"
     "capacity/type" = "SPOT"
-    "severity" = "soft"
+    "severity"      = "soft"
   }
 
   tags = {

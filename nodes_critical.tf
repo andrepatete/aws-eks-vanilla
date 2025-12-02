@@ -23,7 +23,7 @@ resource "aws_eks_node_group" "critical" {
     "capacity/os"   = "BOTTLEROCKET"
     "capacity/arch" = "x86_64"
     "capacity/type" = "ON_DEMAND"
-    "severity" = "critical"
+    "severity"      = "critical"
   }
 
   tags = {
