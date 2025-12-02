@@ -52,3 +52,7 @@ variable "auto_scale_options" {
 variable "nodes_instance_sizes" {
   type = list(string)
 }
+
+variable "nodes_instance_sizes_graviton" {
+  type = list(string)
+}
