@@ -56,3 +56,13 @@ variable "nodes_instance_sizes" {
 variable "nodes_instance_sizes_graviton" {
   type = list(string)
 }
+
+
+
+#### Node Groups - Custom
+
+variable "custon_ami" {
+  type        = string
+  description = "AMI ID Customizada para os nodes"
+  default     = "ami-0edd2b60bc3608c96"
+}
