@@ -11,7 +11,7 @@ metadata:
   name: chip
   namespace: chip
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: chip
@@ -86,7 +86,7 @@ metadata:
   namespace: chip
 spec:
   maxReplicas: 6
-  minReplicas: 2
+  minReplicas: 1
   metrics:
     - type: Resource
       resource:
