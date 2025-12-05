@@ -46,4 +46,8 @@ resource "helm_release" "node_termination_handler" {
       value = false
     }
   ]
+  depends_on = [
+    aws_eks_cluster.main,
+    aws_eks_node_group.main
+  ]
 }
