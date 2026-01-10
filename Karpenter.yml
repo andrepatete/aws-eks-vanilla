@@ -3,7 +3,7 @@ kind: EC2NodeClass
 metadata:
   name: projeks
 spec:
-  instanceProfile: "linuxtips-eks-cluster"
+  instanceProfile: "projeks_cluster"
   amiFamily: "AL2023"
   amiSelectorTerms:
   - id: ami-02ac2d1c789136a83
@@ -17,11 +17,11 @@ spec:
 apiVersion: karpenter.sh/v1
 kind: NodePool
 metadata:
-  name: linuxtips
+  name: projeks
 spec:
   disruption:
     consolidationPolicy: WhenEmptyOrUnderutilized
-    consolidateAfter: 2m
+    consolidateAfter: 1m
   template:
     metadata:
       labels:

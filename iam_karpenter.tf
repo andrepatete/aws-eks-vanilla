@@ -42,7 +42,15 @@ data "aws_iam_policy_document" "karpenter_policy" {
       "ec2:DeleteLaunchTemplate",
       "ssm:GetParameter",
       "iam:PassRole",
-      "sqs:*"
+      "sqs:*",
+      #Extras
+      "iam:ListInstanceProfiles",
+      "iam:GetInstanceProfile",
+      "iam:CreateInstanceProfile",
+      "iam:TagInstanceProfile",
+      "iam:AddRoleToInstanceProfile",
+      "iam:RemoveRoleFromInstanceProfile",
+      "iam:DeleteInstanceProfile"
     ]
 
     resources = [
