@@ -16,7 +16,7 @@ resource "kubectl_manifest" "nodepool" {
     NAME               = var.karpenter_capacity[count.index].name
     WORKLOAD           = var.karpenter_capacity[count.index].workload
     INSTANCE_FAMILY    = var.karpenter_capacity[count.index].instance_family
-    INSTANCE_SIZES      = var.karpenter_capacity[count.index].instance_sizes
+    INSTANCE_SIZES     = var.karpenter_capacity[count.index].instance_sizes
     CAPACITY_TYPE      = var.karpenter_capacity[count.index].capacity_type
     AVAILABILITY_ZONES = var.karpenter_capacity[count.index].availability_zones
   })
